@@ -271,4 +271,33 @@ if (msg.content.startsWith("stock.veryslowpumpwheat")) {
      }
 );
 
+client.on('message', msg => {
+  if (msg.content.startsWith("stock.pumpcopper")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 copper");
+        }
+     );
+    } 1000;
+  
+  if (msg.content.startsWith("stock.slowpumpcopper")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 copper");
+        }
+     );
+    } 3000;
+  
+if (msg.content.startsWith("stock.veryslowpumpcopper")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 copper");
+        }
+     );
+    } 6000;
+  
+ if (msg.content.startsWith("stock.2secpumpcopper")) {
+      setInterval(function() {
+   msg.channel.send('.buy 1 copper'); }, 2000);
+       }
+     }
+);
+
 client.login('token');
