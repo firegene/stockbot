@@ -243,4 +243,33 @@ if (msg.content.startsWith("stock.veryslowpumpplatinum")) {
      }
 );
 
+client.on('message', msg => {
+  if (msg.content.startsWith("stock.pumpsugar")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 sugar");
+        }
+     );
+    } 1000;
+  
+  if (msg.content.startsWith("stock.slowpumpsugar")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 sugar");
+        }
+     );
+    } 3000;
+  
+if (msg.content.startsWith("stock.veryslowpumpsugar")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 sugar");
+        }
+     );
+    } 6000;
+  
+ if (msg.content.startsWith("stock.2secpumpsugar")) {
+      setInterval(function() {
+   msg.channel.send('.buy 1 sugar'); }, 2000);
+       }
+     }
+);
+
 client.login('token');
