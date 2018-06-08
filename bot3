@@ -300,4 +300,61 @@ if (msg.content.startsWith("stock.veryslowpumpcopper")) {
      }
 );
 
+client.on('message', msg => {
+  if (msg.content.startsWith("stock.pumpcopper")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 copper");
+        }
+     );
+    } 1000;
+  
+  if (msg.content.startsWith("stock.slowpumpcopper")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 copper");
+        }
+     );
+    } 3000;
+  
+if (msg.content.startsWith("stock.veryslowpumpcopper")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 copper");
+        }
+     );
+    } 6000;
+  
+ if (msg.content.startsWith("stock.2secpumpcopper")) {
+      setInterval(function() {
+   msg.channel.send('.buy 1 copper'); }, 2000);
+       }
+     }
+);
+
+client.on('message', msg => {
+  if (msg.content.startsWith("stock.pumpuranium")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 uranium");
+        }
+     );
+    } 1000;
+  
+  if (msg.content.startsWith("stock.slowpumpuranium")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 uranium");
+        }
+     );
+    } 3000;
+  
+if (msg.content.startsWith("stock.veryslowpumpuranium")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 uranium");
+        }
+     );
+    } 6000;
+  
+ if (msg.content.startsWith("stock.2secpumpuranium")) {
+      setInterval(function() {
+   msg.channel.send('.buy 1 uranium'); }, 2000);
+       }
+    
+
 client.login('token');
