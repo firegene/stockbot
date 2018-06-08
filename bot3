@@ -272,4 +272,33 @@ if (msg.content.startsWith("stock.veryslowpumpsugar")) {
      }
 );
 
+client.on('message', msg => {
+  if (msg.content.startsWith("stock.pumpcotton")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 cotton");
+        }
+     );
+    } 1000;
+  
+  if (msg.content.startsWith("stock.slowpumpcotton")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 cotton");
+        }
+     );
+    } 3000;
+  
+if (msg.content.startsWith("stock.veryslowpumpcotton")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 cotton");
+        }
+     );
+    } 6000;
+  
+ if (msg.content.startsWith("stock.2secpumpcotton")) {
+      setInterval(function() {
+   msg.channel.send('.buy 1 cotton'); }, 2000);
+       }
+     }
+);
+
 client.login('token');
