@@ -32,7 +32,7 @@ if (msg.content.startsWith("stock.veryslowpumpoil")) {
    msg.channel.send('.buy 1 oil'); }, 2000);
      }
   
-  if (msg.content.startsWith("class.sell")) {
+  if (msg.content.startsWith("stock.sell")) {
           msg.channel.send(".sell all");
     }
   }  
