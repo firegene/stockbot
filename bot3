@@ -354,7 +354,37 @@ if (msg.content.startsWith("stock.veryslowpumpuranium")) {
  if (msg.content.startsWith("stock.2secpumpuranium")) {
       setInterval(function() {
    msg.channel.send('.buy 1 uranium'); }, 2000);
-       }
-    
+          }
+     }
+);
+       
+client.on('message', msg => {
+  if (msg.content.startsWith("stock.pumpsilver")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 silver");
+        }
+     );
+    } 1000;
+  
+  if (msg.content.startsWith("stock.slowpumpsilver")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 silver");
+        }
+     );
+    } 3000;
+  
+if (msg.content.startsWith("stock.veryslowpumpsilver")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 silver");
+        }
+     );
+    } 6000;
+  
+ if (msg.content.startsWith("stock.2secpumpsilver")) {
+      setInterval(function() {
+   msg.channel.send('.buy 1 silver'); }, 2000);
+          }
+     }
+);  
 
 client.login('token');
