@@ -67,4 +67,33 @@ if (msg.content.startsWith("stock.veryslowpumpcorn")) {
      }
 );
 
+client.on('message', msg => {
+  if (msg.content.startsWith("stock.pumpcattle")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 cattle");
+        }
+     );
+    } 1000;
+  
+  if (msg.content.startsWith("stock.slowpumpcattle")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 cattle");
+        }
+     );
+    } 3000;
+  
+if (msg.content.startsWith("stock.veryslowpumpcattle")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 cattle");
+        }
+     );
+    } 6000;
+  
+ if (msg.content.startsWith("stock.2secpumpcattle")) {
+      setInterval(function() {
+   msg.channel.send('.buy 1 cattle'); }, 2000);
+       }
+     }
+);
+
 client.login('token');
