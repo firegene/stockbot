@@ -12,42 +12,30 @@ client.on('message', msg => {
         }
      );
     } 1000;
-  }
-);
-
-client.on('message', msg => {
+  
   if (msg.content.startsWith("stock.slowpumpoil")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 oil");
         }
      );
     } 3000;
-  }
-);
-
-client.on('message', msg => {
-  if (msg.content.startsWith("stock.veryslowpumpoil")) {
+  
+if (msg.content.startsWith("stock.veryslowpumpoil")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 oil");
         }
      );
     } 6000;
-  }
-);
-
-client.on('message', msg => {
-   if (msg.content.startsWith("stock.2secpumpoil")) {
+  
+ if (msg.content.startsWith("stock.2secpumpoil")) {
       setInterval(function() {
    msg.channel.send('.buy 1 oil'); }, 2000);
      }
-   }
-);
-
-client.on('message', msg => {
+  
   if (msg.content.startsWith("class.sell")) {
           msg.channel.send(".sell all");
     }
-  }
+  }  
 );
 
 client.login('token');
