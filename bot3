@@ -1,0 +1,70 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg => {
+  if (msg.content.startsWith("stock.pumpoil")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 oil");
+        }
+     );
+    } 1000;
+  
+  if (msg.content.startsWith("stock.slowpumpoil")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 oil");
+        }
+     );
+    } 3000;
+  
+if (msg.content.startsWith("stock.veryslowpumpoil")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 oil");
+        }
+     );
+    } 6000;
+  
+ if (msg.content.startsWith("stock.2secpumpoil")) {
+      setInterval(function() {
+   msg.channel.send('.buy 1 oil'); }, 2000);
+     }
+  
+  if (msg.content.startsWith("stock.sell")) {
+          msg.channel.send(".sell all");
+    }
+  }  
+);
+
+client.on('message', msg => {
+  if (msg.content.startsWith("stock.pumpcorn")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 corn");
+        }
+     );
+    } 1000;
+  
+  if (msg.content.startsWith("stock.slowpumpcorn")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 corn");
+        }
+     );
+    } 3000;
+  
+if (msg.content.startsWith("stock.veryslowpumpcorn")) {
+    var lol = setInterval(function() {
+          msg.channel.send(".buy 1 corn");
+        }
+     );
+    } 6000;
+  
+ if (msg.content.startsWith("stock.2secpumpcorn")) {
+      setInterval(function() {
+   msg.channel.send('.buy 1 corn'); }, 2000);
+       }
+     }
+);
+
+client.login('token');
