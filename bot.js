@@ -28,7 +28,7 @@ if (msg.content.startsWith("stock.veryslowpumpoil")) {
     } 6000;
   
 if (msg.content.startsWith("stock.2secpumpoil")) {
-      setInterval(function() {
+     var lol =  setInterval(function() {
    msg.channel.send('.buy 1 oil'); }, 2000);
      }
   
@@ -54,7 +54,7 @@ if (msg.content.startsWith("stock.veryslowpumpcorn")) {
     } 6000;
   
 if (msg.content.startsWith("stock.2secpumpcorn")) {
-      setInterval(function() {
+      var lol = setInterval(function() {
    msg.channel.send('.buy 1 corn'); }, 2000);
        }
   
@@ -80,7 +80,7 @@ if (msg.content.startsWith("stock.veryslowpumpcattle")) {
     } 6000;
   
  if (msg.content.startsWith("stock.2secpumpcattle")) {
-      setInterval(function() {
+      var lol = setInterval(function() {
    msg.channel.send('.buy 1 cattle'); }, 2000);
        }  
   
@@ -106,7 +106,7 @@ if (msg.content.startsWith("stock.veryslowpumpgold")) {
     } 6000;
   
  if (msg.content.startsWith("stock.2secpumpgold")) {
-      setInterval(function() {
+      var lol = setInterval(function() {
    msg.channel.send('.buy 1 gold'); }, 2000);
        }
   
@@ -160,7 +160,7 @@ if (msg.content.startsWith("stock.veryslowpumpplatinum")) {
     } 6000;
   
  if (msg.content.startsWith("stock.2secpumpplatinum")) {
-      setInterval(function() {
+      var lol = setInterval(function() {
    msg.channel.send('.buy 1 platinum'); }, 2000);
        }
   
@@ -186,7 +186,7 @@ if (msg.content.startsWith("stock.veryslowpumpcotton")) {
     } 6000;
   
  if (msg.content.startsWith("stock.2secpumpcotton")) {
-      setInterval(function() {
+      var lol = setInterval(function() {
    msg.channel.send('.buy 1 cotton'); }, 2000);
        }
   
@@ -212,7 +212,7 @@ if (msg.content.startsWith("stock.veryslowpumpwheat")) {
     } 6000;
   
  if (msg.content.startsWith("stock.2secpumpwheat")) {
-      setInterval(function() {
+     var lol = setInterval(function() {
    msg.channel.send('.buy 1 wheat'); }, 2000);
        }  
 
@@ -236,37 +236,12 @@ if (msg.content.startsWith("stock.veryslowpumpcopper")) {
         }
      );
     } 6000;
-  
+
+ 
  if (msg.content.startsWith("stock.2secpumpcopper")) {
-      setInterval(function() {
+     var lol = setInterval(function() {
    msg.channel.send('.buy 1 copper'); }, 2000);
-       }  
-  
-if (msg.content.startsWith("stock.pumpcopper")) {
-    var lol = setInterval(function() {
-          msg.channel.send(".buy 1 copper");
-        }
-     );
-    } 1000;
-  
-  if (msg.content.startsWith("stock.slowpumpcopper")) {
-    var lol = setInterval(function() {
-          msg.channel.send(".buy 1 copper");
-        }
-     );
-    } 3000;
-  
-if (msg.content.startsWith("stock.veryslowpumpcopper")) {
-    var lol = setInterval(function() {
-          msg.channel.send(".buy 1 copper");
-        }
-     );
-    } 6000;
-  
- if (msg.content.startsWith("stock.2secpumpcopper")) {
-      setInterval(function() {
-   msg.channel.send('.buy 1 copper'); }, 2000);
-       }  
+          }  
   
  if (msg.content.startsWith("stock.pumpuranium")) {
     var lol = setInterval(function() {
@@ -290,7 +265,7 @@ if (msg.content.startsWith("stock.veryslowpumpuranium")) {
     } 6000;
   
  if (msg.content.startsWith("stock.2secpumpuranium")) {
-      setInterval(function() {
+     var lol = setInterval(function() {
    msg.channel.send('.buy 1 uranium'); }, 2000);
           }  
   
@@ -316,7 +291,7 @@ if (msg.content.startsWith("stock.veryslowpumpsilver")) {
     } 6000;
   
  if (msg.content.startsWith("stock.2secpumpsilver")) {
-      setInterval(function() {
+      var lol = setInterval(function() {
    msg.channel.send('.buy 1 silver'); }, 2000);
           }  
   
@@ -342,12 +317,12 @@ if (msg.content.startsWith("stock.veryslowpumpcocoa")) {
     } 6000;
   
  if (msg.content.startsWith("stock.2secpumpcocoa")) {
-      setInterval(function() {
+      var lol = setInterval(function() {
    msg.channel.send('.buy 1 cocoa'); }, 2000);
           }
   
  if (msg.content.startsWith("stock.2secpumpcoal")) {
-      setInterval(function() {
+      var lol = setInterval(function() {
    msg.channel.send('.buy 1 coal'); }, 2000);
        }
      }
