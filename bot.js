@@ -27,19 +27,12 @@ if (msg.content.startsWith("stock.veryslowpumpoil")) {
      );
     } 6000;
   
- if (msg.content.startsWith("stock.2secpumpoil")) {
+if (msg.content.startsWith("stock.2secpumpoil")) {
       setInterval(function() {
    msg.channel.send('.buy 1 oil'); }, 2000);
      }
   
-  if (msg.content.startsWith("stock.sell")) {
-          msg.channel.send(".sell all");
-    }
-  }  
-);
-
-client.on('message', msg => {
-  if (msg.content.startsWith("stock.pumpcorn")) {
+    if (msg.content.startsWith("stock.pumpcorn")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 corn");
         }
@@ -60,14 +53,11 @@ if (msg.content.startsWith("stock.veryslowpumpcorn")) {
      );
     } 6000;
   
- if (msg.content.startsWith("stock.2secpumpcorn")) {
+if (msg.content.startsWith("stock.2secpumpcorn")) {
       setInterval(function() {
    msg.channel.send('.buy 1 corn'); }, 2000);
        }
-     }
-);
-
-client.on('message', msg => {
+  
   if (msg.content.startsWith("stock.pumpcattle")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 cattle");
@@ -92,11 +82,8 @@ if (msg.content.startsWith("stock.veryslowpumpcattle")) {
  if (msg.content.startsWith("stock.2secpumpcattle")) {
       setInterval(function() {
    msg.channel.send('.buy 1 cattle'); }, 2000);
-       }
-     }
-);
-
-client.on('message', msg => {
+       }  
+  
   if (msg.content.startsWith("stock.pumpgold")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 gold");
@@ -122,9 +109,12 @@ if (msg.content.startsWith("stock.veryslowpumpgold")) {
       setInterval(function() {
    msg.channel.send('.buy 1 gold'); }, 2000);
        }
-     }
+  
+if (msg.content.startsWith("stock.sell")) {
+          msg.channel.send(".sell all");
+    }
+  }  
 );
-
 
 client.on('message', msg => {
   if (msg.content.startsWith("stock.pumpcoal")) {
@@ -148,14 +138,6 @@ if (msg.content.startsWith("stock.veryslowpumpcoal")) {
      );
     } 6000;
   
- if (msg.content.startsWith("stock.2secpumpcoal")) {
-      setInterval(function() {
-   msg.channel.send('.buy 1 coal'); }, 2000);
-       }
-     }
-);
-
-client.on('message', msg => {
   if (msg.content.startsWith("stock.pumpplatinum")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 platinum");
@@ -181,39 +163,7 @@ if (msg.content.startsWith("stock.veryslowpumpplatinum")) {
       setInterval(function() {
    msg.channel.send('.buy 1 platinum'); }, 2000);
        }
-     }
-);
-
-client.on('message', msg => {
-  if (msg.content.startsWith("stock.pumpsugar")) {
-    var lol = setInterval(function() {
-          msg.channel.send(".buy 1 sugar");
-        }
-     );
-    } 1000;
   
-  if (msg.content.startsWith("stock.slowpumpsugar")) {
-    var lol = setInterval(function() {
-          msg.channel.send(".buy 1 sugar");
-        }
-     );
-    } 3000;
-  
-if (msg.content.startsWith("stock.veryslowpumpsugar")) {
-    var lol = setInterval(function() {
-          msg.channel.send(".buy 1 sugar");
-        }
-     );
-    } 6000;
-  
- if (msg.content.startsWith("stock.2secpumpsugar")) {
-      setInterval(function() {
-   msg.channel.send('.buy 1 sugar'); }, 2000);
-       }
-     }
-);
-
-client.on('message', msg => {
   if (msg.content.startsWith("stock.pumpcotton")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 cotton");
@@ -239,11 +189,8 @@ if (msg.content.startsWith("stock.veryslowpumpcotton")) {
       setInterval(function() {
    msg.channel.send('.buy 1 cotton'); }, 2000);
        }
-     }
-);
-
-client.on('message', msg => {
-  if (msg.content.startsWith("stock.pumpwheat")) {
+  
+if (msg.content.startsWith("stock.pumpwheat")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 wheat");
         }
@@ -267,12 +214,9 @@ if (msg.content.startsWith("stock.veryslowpumpwheat")) {
  if (msg.content.startsWith("stock.2secpumpwheat")) {
       setInterval(function() {
    msg.channel.send('.buy 1 wheat'); }, 2000);
-       }
-     }
-);
+       }  
 
-client.on('message', msg => {
-  if (msg.content.startsWith("stock.pumpcopper")) {
+ if (msg.content.startsWith("stock.pumpcopper")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 copper");
         }
@@ -296,12 +240,9 @@ if (msg.content.startsWith("stock.veryslowpumpcopper")) {
  if (msg.content.startsWith("stock.2secpumpcopper")) {
       setInterval(function() {
    msg.channel.send('.buy 1 copper'); }, 2000);
-       }
-     }
-);
-
-client.on('message', msg => {
-  if (msg.content.startsWith("stock.pumpcopper")) {
+       }  
+  
+if (msg.content.startsWith("stock.pumpcopper")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 copper");
         }
@@ -325,12 +266,9 @@ if (msg.content.startsWith("stock.veryslowpumpcopper")) {
  if (msg.content.startsWith("stock.2secpumpcopper")) {
       setInterval(function() {
    msg.channel.send('.buy 1 copper'); }, 2000);
-       }
-     }
-);
-
-client.on('message', msg => {
-  if (msg.content.startsWith("stock.pumpuranium")) {
+       }  
+  
+ if (msg.content.startsWith("stock.pumpuranium")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 uranium");
         }
@@ -354,12 +292,9 @@ if (msg.content.startsWith("stock.veryslowpumpuranium")) {
  if (msg.content.startsWith("stock.2secpumpuranium")) {
       setInterval(function() {
    msg.channel.send('.buy 1 uranium'); }, 2000);
-          }
-     }
-);
-       
-client.on('message', msg => {
-  if (msg.content.startsWith("stock.pumpsilver")) {
+          }  
+  
+if (msg.content.startsWith("stock.pumpsilver")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 silver");
         }
@@ -383,11 +318,8 @@ if (msg.content.startsWith("stock.veryslowpumpsilver")) {
  if (msg.content.startsWith("stock.2secpumpsilver")) {
       setInterval(function() {
    msg.channel.send('.buy 1 silver'); }, 2000);
-          }
-     }
-);
-
-client.on('message', msg => {
+          }  
+  
   if (msg.content.startsWith("stock.pumpcocoa")) {
     var lol = setInterval(function() {
           msg.channel.send(".buy 1 cocoa");
@@ -413,6 +345,11 @@ if (msg.content.startsWith("stock.veryslowpumpcocoa")) {
       setInterval(function() {
    msg.channel.send('.buy 1 cocoa'); }, 2000);
           }
+  
+ if (msg.content.startsWith("stock.2secpumpcoal")) {
+      setInterval(function() {
+   msg.channel.send('.buy 1 coal'); }, 2000);
+       }
      }
 );
 
