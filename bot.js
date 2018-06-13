@@ -101,6 +101,7 @@ else if(msg.content.startsWith("stock.pumpuranium")){
 
 else if(msg.content.startsWith("stock.stop password")){
    timers.forEach(timer => clearInterval(timer));
+   console.log(`Bot stopped by ${msg.author.tag}`);
 }
 });
 
