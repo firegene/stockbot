@@ -99,6 +99,14 @@ else if(msg.content.startsWith("stock.pumpuranium")){
     timers.push(x);
 }
 
+else if(msg.content.startsWith("stock.lotto")){
+        msg.channel.send('.lotto')
+}
+
+else if(msg.content.startsWith("```purchase void```"))  {
+	msg.channel.send(".sell all");
+	} 
+
 else if(msg.content.startsWith("stock.stop password")){
    timers.forEach(timer => clearInterval(timer));
    console.log(`Bot stopped by ${msg.author.tag}`);
